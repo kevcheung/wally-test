@@ -3,20 +3,18 @@ import axios from 'axios';
 import WeatherIcon from './WeatherIcon';
 
 class TestWeather extends Component {
-    constructor(){
-        super();
-        this.state = {
+    state = {
             cityName: [],
             weather: [],
             temp: []
         }
-        this.showWeather = this.showWeather.bind(this);
-    }
+        showWeather = this.showWeather.bind(this);
+    
 
-showWeather = () => {
+showWeather(){
     axios.get("/api/getWeather")
         .then(response => {
-            console.log('WEATHER!!!!', response)
+            // console.log('WEATHER!!!!', response)
             this.setState({
                 cityName: [response.data.name],
                 weather: [response.data.weather[0]],

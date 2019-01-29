@@ -15,8 +15,8 @@ class App extends Component {
         <div className="App">
           {/* <TestWall /> */}
           {/* <TestMoment /> */}
-          <TestWeather />
-          {/* <TestQuote /> */}
+          {/* <TestWeather /> */}
+          <TestQuote />
         </div>
       </Provider>
     );
