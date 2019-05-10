@@ -1,6 +1,7 @@
 import React from 'react';
 
 export default function weatherIcon(props){
+  // console.log('weather', props)
     const { obj } = props;
     return (
         <div>
